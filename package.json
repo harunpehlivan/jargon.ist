@@ -36,7 +36,8 @@
     "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
     "react-instantsearch": "^5.0.3",
-    "slug": "^0.9.1"
+    "slug": "^0.9.1",
+    "snyk": "^1.316.1"
   },
   "keywords": [
     "gatsby"
@@ -59,7 +60,9 @@
     "format": "yarn run format:js && yarn run format:css && yarn run format:md",
     "flow-typed-install": "flow-typed install",
     "precommit": "lint-staged",
-    "tweet": "node bin/tweet.js"
+    "tweet": "node bin/tweet.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
@@ -96,5 +99,6 @@
     "stylelint-config-prettier": "^3.2.0",
     "stylelint-config-sass-guidelines": "^5.0.0",
     "twit": "^2.2.9"
-  }
+  },
+  "snyk": true
 }
